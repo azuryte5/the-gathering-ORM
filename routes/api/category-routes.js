@@ -5,6 +5,7 @@ const { Category, Product } = require('../../models');
 
 router.get('/', (req, res) => {
   // find all categories
+  // USE THE ORM TO do these things.
   // be sure to include its associated Products
 });
 

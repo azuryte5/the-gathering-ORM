@@ -32,7 +32,8 @@ const productData = [
     category_id: 2,
   },
 ];
-
+// writing a bunch of insert statments
+// matching the model define.
 const seedProducts = () => Product.bulkCreate(productData);
 
 module.exports = seedProducts;
