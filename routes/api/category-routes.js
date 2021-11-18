@@ -9,14 +9,22 @@ router.get('/', (req, res) => {
   // be sure to include its associated Products
   Category.findAll({
     include:[{model: Product}]
-  }).then((dbCategory) => {
-    res.json(dbCategory);
+  }).then(dbCategories => {
+    res.json(dbCategories);
   });
 });
 
 router.get('/:id', (req, res) => {
-  // find one category by its `id` value
+  Category.findOne({
+    where: {
+      id: req.params.id
+    },
+    include: [{model:Product}]    
+    // find one category by its `id` value
   // be sure to include its associated Products
+  }).then(dbCategory => {
+  res.json(dbCategory);
+  });
 });
 
 router.post('/', (req, res) => {
