@@ -7,6 +7,11 @@ router.get('/', (req, res) => {
   // find all categories
   // USE THE ORM TO do these things.
   // be sure to include its associated Products
+  Category.findAll({
+    include:[{model: Product}]
+  }).then((dbCategory) => {
+    res.json(dbCategory);
+  });
 });
 
 router.get('/:id', (req, res) => {

@@ -8,7 +8,6 @@ router.get('/', (req, res) => {
 Product.findAll({
   include: [{model: Category}, {model: Tag}]
 }).then((dbProduct) => {
-  console.log(dbProduct);
   res.json(dbProduct);
 });  
   // be sure to include its associated Category and Tag data
