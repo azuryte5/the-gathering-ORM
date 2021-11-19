@@ -1,4 +1,4 @@
-# the-gathering-orm
+# the-gathering-ORM
 13. Object-Relational Mapping (ORM) Challenge: E-commerce Back End
 # Table of Contents
 1. [Links](#links)
@@ -12,26 +12,22 @@
 ## Links
 The URL of the GitHub repository: https://github.com/azuryte5/the-gathering-ORM
 
-The link to the screencastify video: {Too be added}
-🔧
+The link to the Screencastify video: https://watch.screencastify.com/v/Zlhyf3RflR9giD1Gaiom
+
 -----
 ## Usage
-This is a back end for an e-commerce site. Using express API information is stored and processed through Sequelize to interact with a MySQL database. Look for 
+This is a back end application for storing inventory for an e-commerce  site. Using express, API routes are fetched and  processed through Sequelize to interact with a MySQL database. Use Insomnia to track various changes to the database as this application does not have a front end.
 
-Begin by running mysql and adding database, table and seed
+Begin by launching mysql and running ```SOURCE db/schema.sql``` then freely ``` quit ``` mysql
+then in node.js run ```npm run seed``` to fill database with predetermined data.
+
 To start app run:  ```npm start```
 
-doesn't have a frontend
-Have to use insomnia/local host to see.
-Can it GET for all of each
+For examples to interact with database checkout the Screencastify video and follow along with Insomnia 
 
-
-Choose options in menu 
-
-<!---Make sure you uncomment this next itme>
-<!-- ![code preview](https://user-images.githubusercontent.com/85147307/141664565-3c91c212-80a0-413d-a103-e90588f6a8bb.png) -->
-<!-- ![https://user-images.githubusercontent.com/85147307/141664564-00cec570-a902-441e-8dd2-9036aeec96be.png) -->
-
+![Insomnia interface](https://user-images.githubusercontent.com/85147307/142677794-82fe037c-b15a-492d-b800-49d8a5ebfdd5.png) 
+![VS code Routes & Model](https://user-images.githubusercontent.com/85147307/142677911-63ce71ee-085b-4561-b8b3-8f1eeefbce4d.png)
+ 
 -----
 ## Tech Used 
 
@@ -39,8 +35,7 @@ Choose options in menu
 - sequelize
 - mysql2
 - dotenv
-- jest?
-- nodemon?
+- Insomnia
 
 ## User Story
 
@@ -51,7 +46,7 @@ SO THAT my company can compete with other e-commerce companies
 ```
 
 ## Acceptance Criteria
-✔️
+
 ```md
 GIVEN a functional Express.js API
 WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
@@ -59,15 +54,15 @@ WHEN I add my database name, MySQL username, and MySQL password to an environmen
 WHEN I enter schema and seed commands
 [✔️]THEN a development database is created and is seeded with test data
 WHEN I enter the command to invoke the application
-[✔️ ]THEN my server is started and the Sequelize models are synced to the MySQL database
+[✔️]THEN my server is started and the Sequelize models are synced to the MySQL database
 WHEN I open API GET routes in Insomnia Core for categories, products, or tags
-[✔️ ]THEN the data for each of these routes is displayed in a formatted JSON
+[✔️]THEN the data for each of these routes is displayed in a formatted JSON
 WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
-[  ]THEN I am able to successfully create, update, and delete data in my database
+[✔️]THEN I am able to successfully create, update, and delete data in my database
 ```
-🛑
+
 ----
 ## Credits
-Made by Andrew Lefebvre 🏢
+Made by Andrew Lefebvre 🔧🤲🏗️🛑🤏
 
 -----
