@@ -52,7 +52,13 @@ Category.update(req.body, {
 });
 
 router.delete('/:id', (req, res) => {
-  // delete a category by its `id` value
+Category.destroy({
+  where: {
+    id: req.params.id
+    }
+  }).then(dbCategory => {
+  res.json(dbCategory)
+  });
 });
 
 module.exports = router;

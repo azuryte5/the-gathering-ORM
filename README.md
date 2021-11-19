@@ -13,7 +13,7 @@
 The URL of the GitHub repository: https://github.com/azuryte5/the-gathering-ORM
 
 The link to the screencastify video: {Too be added}
-
+🔧
 -----
 ## Usage
 This is a back end for an e-commerce site. Using express API information is stored and processed through Sequelize to interact with a MySQL database. Look for 
